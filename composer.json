@@ -1,0 +1,23 @@
+{
+    "name": "grinet/module-login-reset",
+    "description": "Grinet Login Reset module",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "magento/framework": "*",
+        "magento/module-customer": "*",
+        "magento/module-checkout": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Grinet\\LoginReset\\": ""
+        }
+    }
+}

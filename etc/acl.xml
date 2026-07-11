@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Grinet_Menu::Menu" title="Grinet Modülleri" sortOrder="9997">
+                    <resource id="Grinet_LoginReset::Menu" title="Login Reset" sortOrder="1400">
+                        <resource id="Grinet_LoginReset::system_config" title="Login Reset Ayarları" sortOrder="1000" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

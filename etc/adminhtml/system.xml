@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="grinet_loginreset" translate="label comment" sortOrder="2200" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Login Reset</label>
+            <tab>grinet</tab>
+            <resource>Grinet_LoginReset::system_config</resource>
+
+            <group id="general_settings" translate="label comment" sortOrder="100" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="is_active" translate="label comment" sortOrder="100" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Is Active</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+            <group id="log_settings" translate="label comment" sortOrder="200" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Log Settings</label>
+                <field id="log_to_file" translate="label comment" sortOrder="100" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Log To File</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Default: Yes</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <update id="Grinet_Menu" title="Grinet Modülleri" module="Grinet_LoginReset" sortOrder="9997" resource="Grinet_Menu::Menu" />
+        <update id="Grinet_LoginReset::Root" title="Login Reset" parent="Grinet_Menu" module="Grinet_LoginReset" sortOrder="1400" resource="Grinet_LoginReset::Menu" />
+        <update id="Grinet_LoginReset::System_Settings" parent="Grinet_LoginReset::Root" module="Grinet_LoginReset" sortOrder="1000" resource="Grinet_LoginReset::Menu" title="Login Reset Ayarları" action="adminhtml/system_config/edit/section/grinet_loginreset" />
+    </menu>
+</config>

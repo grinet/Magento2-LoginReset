@@ -1,0 +1,14 @@
+<?php
+/**
+ * @var \Grinet\LoginReset\Block\LoginHelp $block
+ * @var \Magento\Framework\Escaper $escaper
+ */
+?>
+<div class="block block-login-reset-help" style="max-width: 976px;margin-left: auto;margin-right: auto;">
+    <div class="block-content" aria-labelledby="block-login-reset-help-heading">
+        <p id="block-login-reset-help-heading">
+            <?= $escaper->escapeHtml(__('Having trouble logging in?')) ?>
+            <?= __('Click <a href="%1" class="action reset-session">Reset Session</a> to reset your session and log in again.', $block->getResetUrl()) ?>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.block-login-reset-help {
+    margin-top: 20px;
+    padding: 12px 16px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #555;
+}
+
+.block-login-reset-help .block-content {
+    margin: 0;
+}
+
+.block-login-reset-help p {
+    margin: 0;
+}
+
+.block-login-reset-help .action.reset-session {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-weight: 600;
+    color: #e2001a;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+.block-login-reset-help .action.reset-session:hover,
+.block-login-reset-help .action.reset-session:focus {
+    color: #b30015;
+    text-decoration: none;
+}

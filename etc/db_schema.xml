@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="grinet_login_reset" resource="default" engine="innodb" comment="Grinet Login Reset Log">
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="token" length="64" nullable="false" comment="Storage Token"/>
+        <column xsi:type="timestamp" name="created_at" default="CURRENT_TIMESTAMP" nullable="false" on_update="false" comment="Created At"/>
+        <column xsi:type="varchar" name="remote_ip" length="45" nullable="true" comment="Remote IP"/>
+        <column xsi:type="mediumtext" name="cart_content" nullable="true" comment="Cart Content JSON"/>
+        <column xsi:type="varchar" name="coupon" length="255" nullable="true" comment="Coupon Code"/>
+        <column xsi:type="decimal" name="cart_grand_total" scale="4" precision="20" unsigned="false" nullable="true" comment="Cart Grand Total"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+        <constraint xsi:type="unique" referenceId="GRINET_LOGIN_RESET_TOKEN_UNIQUE">
+            <column name="token"/>
+        </constraint>
+        <index referenceId="GRINET_LOGIN_RESET_CREATED_AT" indexType="btree">
+            <column name="created_at"/>
+        </index>
+    </table>
+</schema>

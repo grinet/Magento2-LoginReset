@@ -1,11 +1,21 @@
 {
     "name": "grinet/module-login-reset",
-    "description": "Grinet Login Reset module",
+    "description": "Grinet Login Reset extension for login stuck customers",
     "type": "magento2-module",
     "version": "1.0.0",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Grinet",
+            "email": "info@grinet.com.tr"
+        },
+        {
+            "name": "Hidayet Ok",
+            "email": "hidonet@gmail.com"
+        }
     ],
     "require": {
         "magento/framework": "*",
